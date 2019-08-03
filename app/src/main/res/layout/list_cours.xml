@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
@@ -9,21 +7,30 @@
     android:orientation="vertical">
 
     <com.example.corses.squarImegView
+        tools:src="@drawable/ic_home"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/titleTextView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.563"
-        tools:layout_editor_absoluteX="-16dp" />
+        android:layout_height="match_parent" />
 
     <TextView
-        android:id="@+id/titleTextView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="21dp"
+        android:textStyle="bold"
+        tools:text="rgrgt"
+        android:maxLines="2"
+        android:padding="2dp"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="150dp" />
+        android:id="@+id/titleTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        tools:text="madsgsdg"
+        android:padding="12dp"
+        android:textSize="15sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/descriptionTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

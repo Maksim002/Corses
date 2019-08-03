@@ -26,8 +26,8 @@ public class Util {
         }
         return json;
     }
-    public static <T> T parseDeta(String json){
-        Type type  = new TypeToken<T>(){}.getType();
+    public static Corses parseDeta(String json){
+        Type type  = new TypeToken<Corses>(){}.getType();
         return new Gson().fromJson(json, type);
     }
 }
